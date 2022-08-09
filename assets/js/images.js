@@ -7,9 +7,7 @@ const drawImages = () => {
 class Picture {
     constructor(src, x, y) {
         this.img = new Image();
-        console.log(this.img);
         this.img.src = src;
-        console.log(this.img);
         this.x = x;
         this.y = y;
         this.startX = x;
@@ -17,6 +15,7 @@ class Picture {
     }
 
     render() {
+        console.log(this.img)
         ctx.drawImage(this.img, this.x, this.y);
     }
 }
