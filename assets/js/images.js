@@ -6,7 +6,7 @@ const drawImages = () => {
 
 class Picture {
     constructor(src, x, y) {
-        this.img = new Image();
+        this.img = document.createElement("img");
         this.img.src = src;
         this.x = x;
         this.y = y;
