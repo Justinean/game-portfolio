@@ -21,5 +21,5 @@ class Picture {
 }
 
 const pictures = [
-    new Picture("../assets/images/me1.jpg", 100, window.innerHeight - 1900)
+    new Picture("./assets/images/me1.jpg", 100, window.innerHeight - 1900)
 ]
