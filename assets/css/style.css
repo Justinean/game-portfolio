@@ -1,0 +1,141 @@
+html,
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    overflow: hidden;
+}
+
+* {
+    text-decoration: none;
+    user-select: none;
+}
+
+#game {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+}
+
+.project {
+    position: absolute;
+    z-index: 1;
+}
+
+.managemenow {
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+
+.links {
+    position: fixed;
+    z-index: 1;
+    top: 10px;
+    left: 20px;
+    margin: 0;
+}
+
+.buttonContainer {
+    position: fixed;
+    top: 40px;
+    display: flex;
+    width: 300px;
+    justify-content: space-around;
+}
+
+.projectDiv {
+    margin-top: 20px;
+    width: 500px;
+    height: 460px;
+}
+
+.projectLink {
+    width: 500px;
+    height: 250px;
+    z-index: 2;
+}
+
+.layer {
+    width: 500px;
+    height: 250px;
+    background-color: #ffffff00;
+    z-index: 100;
+}
+
+.layer:hover {
+    animation: fadeIn 500ms linear;
+    background-color: #ffffffda;
+}
+
+.layer:hover > .text {
+    display: block;
+    animation: textFadeIn 500ms linear;
+    color: #000000be;
+}
+
+.project {
+    height: 250px;
+    width: 500px;
+    position: absolute;
+    display: block;
+    min-width: 282px;
+}
+
+.project > img {
+    position: absolute;
+    z-index: -1
+}
+
+.text {
+    display: none;
+    position: relative;
+    top: 40px;
+    left: 40px;
+    color: #00000000;
+    width: fit-content;
+    z-index: 2;
+}
+
+.text h2 {
+    display: inline;
+    margin-right: 30px;
+    text-decoration: none;
+}
+
+.text h2:hover {
+    cursor: pointer;
+}
+
+.text img:hover {
+    cursor: pointer;
+}
+
+.layer:hover {
+    cursor: pointer;
+}
+
+.here {
+    position: absolute;
+    z-index: 1;
+    text-decoration: underline;
+}
+
+@keyframes fadeIn {
+    0% {background-color: #ffffff00;}
+    100% {background-color: #ffffffda;}
+}
+
+@keyframes textFadeIn {
+    0% {color: #00000000;}
+    100% {color: #000000be;}
+}
